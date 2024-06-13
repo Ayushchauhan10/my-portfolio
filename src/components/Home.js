@@ -11,6 +11,7 @@ import { BsChatTextFill } from "react-icons/bs";
 
 import '../App.css';
 import { GlobalContext } from '../context/GlobalContext';
+
 import {useTypewriter,Cursor} from 'react-simple-typewriter';
 import { Link } from 'react-router-dom';
 
@@ -32,14 +33,14 @@ const Home = () => {
     }, []);
   
     const [text] = useTypewriter({
-        words: ["Specialize in MERN Stack . . .", " a final year B.Tech CS student. . .", " Proficient in C/C++","have strong problem-solving skills. . .","have strong foundation in DSA and CS fundamentals"],
+        words: ["Specialize in MERN Stack . . .", "Ranked among Top 75 coders in Amazon HackOnS4. . .", " Proficient in C/C++","Knight,1950+(top 3%) @leetcode. . .","have strong foundation in DSA and CS fundamentals"],
         loop: true,
         typeSpeed: 20,
         deleteSpeed: 10,
         delaySpeed: 2000,
       });
   return (
-    <div className='flex flex-col-reverse   px-6 py-10 md:px-0 md:flex-row min-h-screen items-center justify-start gap-5 w-vw bg-'
+    <div className='flex flex-col-reverse  px-6 py-10 md:px-0 md:flex-row min-h-screen items-center justify-start gap-5 w-vw bg-'
     style={{
         background: isLargeScreen
           ? theme === 'light'
@@ -51,13 +52,13 @@ const Home = () => {
       }}
     >
         
-        <div className='w-[80%] h-[60%] md:w-[50%] flex flex-col mt-6 md:mt-0 items-center justify-center'>
+        <div className='w-[80%]  h-[60%] md:w-[50%] flex flex-col md:mt-0 items-center justify-center'>
 
                 <img src={mainPic} alt="pic" className='md:w-[28rem] md:h-[40rem]' />
 
         </div>
 
-        <div className='md:w-[50%] w-vw flex flex-col items-start gap-4 justify-center'>
+        <div className='md:w-[50%] md:mt-[60px] lg:mt-0 w-vw flex flex-col items-start gap-4 justify-center'>
 
             <h1 className={`text-5xl mt-6 md:mt-0 font-black py-4 ${theme==='light'?'text-shadow-class1 ':'text-shadow-class2'}`}>
                 Hi, I'm 
@@ -65,9 +66,9 @@ const Home = () => {
                 Ayush Chauhan</h2>
             </h1>
 
-            <div className='text-lg w-[350px] h-[50px]  font-medium'>
+            <div className='text-lg w-[350px] h-[50px]  font-semibold'>
                 {text}
-                <span className='font-black text-2xl'>
+                <span className='font-black text-3xl'>
                  <Cursor cursorBlinking="false" cursorStyle="|" cursorColor={`${theme==='light'?'rgba(245,102,146,1)':'rgba(56,189,249,1)'}`}/>
                 </span>
             </div>

@@ -153,7 +153,7 @@ const ImageCarousel = () => {
     
       return (
         <div className=' w-full mx-auto mt-4 px-2 mb-10'>
-          <div className='mx-auto lg:w-[900px] md:w-[800px] w-[380px] px-3 py-3 '>
+          <div className='mx-auto lg:w-[900px] md:w-[800px] w-[370px] px-3 py-3 '>
     
                   {
               images ? (

@@ -52,5 +52,128 @@ body{
     transform: translateY(-5px);
 }
 
-/* lightTheme:'rgba(245,102,146,1)',
-        darkTheme:'rgba(56,189,249,1)', */
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.hover-visible {
+    animation: fadeInOut 2s forwards;
+}
+
+@keyframes navBarItems0 {
+    from {
+      left: -100px;
+      top: -50px;
+      opacity: 0;
+    }
+    to {
+      left:0px;
+      top:10px;
+      opacity: 1;
+    }
+  }
+
+@keyframes navBarItems1 {
+    from {
+      left: -50px;
+      top: -50px;
+      opacity: 0;
+    }
+    to {
+      left:70px;
+      top:10px;
+      opacity: 1;
+    }
+  }
+
+@keyframes navBarItems2 {
+    from {
+      left: 0px;
+      top: -50px;
+      opacity: 0;
+    }
+    to {
+      left:140px;
+      top:10px;
+      opacity: 1;
+    }
+  }
+
+@keyframes navBarItems3 {
+    from {
+      left: 0px;
+      top: -50px;
+      opacity: 0;
+    }
+    to {
+      left:210px;
+      top:10px;
+      opacity: 1;
+    }
+  }
+
+  .animate-navBarItems0 {
+    animation-name: none;
+  }
+  .animate-navBarItems1 {
+    animation-name: none;
+  }
+  .animate-navBarItems2 {
+    animation-name: none;
+  }
+  .animate-navBarItems3 {
+    animation-name: none;
+  }
+  .animate-navBarItems4 {
+    animation-name: none;
+  }
+
+
+@keyframes navBarItems4 {
+    from {
+      left: 0px;
+      top: -50px;
+      opacity: 0;
+    }
+    to {
+      left:300px;
+      top:20px;
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .animate-navBarItems3 {
+        animation-name: navBarItems3;
+        animation-duration: 0.8s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    }
+    .animate-navBarItems2 {
+        animation-name: navBarItems2;
+        animation-duration: 0.7s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    }
+    .animate-navBarItems1 {
+        animation-name: navBarItems1;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    }
+    .animate-navBarItems0 {
+        animation-name: navBarItems0;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    }
+    .animate-navBarItems4 {
+        animation-name: navBarItems4;
+        animation-duration: 0.8s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    }
+}

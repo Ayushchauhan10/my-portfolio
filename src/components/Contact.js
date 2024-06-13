@@ -93,7 +93,7 @@ const Contact = () => {
 
   return (
     <div className={`flex flex-col px-4 items-center justify-center gap-6`}>
-      <h1 className={`flex flex-row items-center justify-center text-[40px] gap-2 mt-6 lg:mt-10 font-black my-5`}>
+      <h1 className={`flex flex-row items-center mt-[50px] justify-center text-[40px] gap-2  lg:mt-10 font-black my-5`}>
         Let's <span className={`${theme === 'light' ? 'text-lightTheme' : 'text-darkTheme'}`}>Talk</span>
       </h1>
       <div className={`w-[100%] flex flex-col items-center`}>
