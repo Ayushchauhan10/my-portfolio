@@ -14,7 +14,7 @@ const Contact = () => {
 
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [messageSent, setMessageSent] = useState(false);
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -48,14 +48,14 @@ const Contact = () => {
 
     const newErrors = validateForm();
     if (Object.keys(newErrors).length === 0) {
-      // Form is valid, send email using EmailJS
+
       try {
         console.log("Form is valid. Sending email...");
 
         const templateParams = {
           to_name:"Ayush Chauhan",
           from_name: formData.name,
-          from_email: formData.email, // Using the formData email as the sender's email
+          from_email: formData.email, 
           subject: formData.subject,
           message: formData.message,
         };
@@ -68,13 +68,28 @@ const Contact = () => {
         );
 
         if (result.status === 200) {
-          setMessageSent(true);
           setFormData({
             name: '',
             email: '',
             subject: '',
             message: '',
           });
+          
+
+          const confirmationTemplateParams = {
+            to_name: formData.name,
+            to_email: formData.email,
+            subject: 'Confirmation: Your message has been received',
+            message: 'Thank you for contacting us! We have received your message and will get back to you soon.',
+            matter_sent:formData.message,
+          };
+          await emailjs.send(
+            'service_v6ucodg', // Replace with your EmailJS service ID
+            'template_hxahnof', // Replace with your EmailJS template ID for confirmation
+            confirmationTemplateParams,
+            'Q1TMhQLW1-PKj-MCJ' // Replace with your EmailJS user ID
+          );
+
           alert('Message sent successfully!');
         } else {
           alert('Failed to send message. Please try again later.');
@@ -179,7 +194,7 @@ const Contact = () => {
 
         </form>
 
-        {messageSent && <p className="text-green-500 text-lg mt-4">Message sent successfully!</p>}
+
       </div>
     </div>
   );

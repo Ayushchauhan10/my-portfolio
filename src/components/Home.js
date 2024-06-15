@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import '../App.css'
 import { GlobalContext } from '../context/GlobalContext';
 import {useTypewriter,Cursor} from 'react-simple-typewriter';
-
+import { Link as ScrollLink } from 'react-scroll';
 import mainPic from '../assets/MainPic.jpeg';
 import ButtonContainer from './ButtonContainer';
 import pdfFile from '../assets/AyushResume.pdf';
@@ -78,10 +78,18 @@ const Home = () => {
                        <BsChatTextFill  className={`text-[20px]  group-hover:text-white  ` }/>
 
                     </div>
-
+                    <ScrollLink
+                key={'contact'}
+                to={'contact'}
+                smooth={true}
+                duration={100}
+                spy={true}
+              >
                      <div className={`py-2  pr-6 text-lg  group-hover:text-white  ${theme==='light'?'text-lightTheme ':'text-darkTheme'}`}>
                         Text Me
                     </div>
+
+              </ScrollLink>
 
                 </div>
                 </a>
