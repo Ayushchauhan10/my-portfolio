@@ -1,5 +1,8 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import '../App.css'
+import { GlobalContext } from '../context/GlobalContext';
+import {useTypewriter,Cursor} from 'react-simple-typewriter';
+
 import mainPic from '../assets/MainPic.jpeg';
 import ButtonContainer from './ButtonContainer';
 import pdfFile from '../assets/AyushResume.pdf';
@@ -8,29 +11,9 @@ import { RiDownloadLine } from "react-icons/ri";
 import { BsChatTextFill } from "react-icons/bs";
 
 
-
-import '../App.css';
-import { GlobalContext } from '../context/GlobalContext';
-
-import {useTypewriter,Cursor} from 'react-simple-typewriter';
-// import { Link } from 'react-router-dom';
-
 const Home = () => {
     const { theme } = useContext(GlobalContext);
-    const lightThemeGradient = 'linear-gradient(78deg, rgba(245,102,146,1) 24%, rgba(221,225,231,1) 24%)';
-    const darkThemeGradient = 'linear-gradient(78deg, rgba(56,189,249,1) 24%, rgba(15,23,42,1) 24%)';
-    const lightBg = 'rgba(221,225,231,1)';
-    const darkBg = 'rgba(15,23,42,1)';
-    const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
-  
-    const handleResize = () => {
-      setIsLargeScreen(window.innerWidth >= 1024);
-    };
-  
-    useEffect(() => {
-      window.addEventListener('resize', handleResize);
-      return () => window.removeEventListener('resize', handleResize);
-    }, []);
+    
   
     const [text] = useTypewriter({
         words: ["Specialize in MERN Stack . . .", "Ranked among Top 75 coders in Amazon HackOnS4. . .", " Proficient in C/C++","Knight,1950+(top 3%) @leetcode. . .","have strong foundation in DSA and CS fundamentals","Rnaked 5 in CodeRush'24 by AlgoUniversity"],
@@ -40,16 +23,8 @@ const Home = () => {
         delaySpeed: 2000,
       });
   return (
-    <div className='flex flex-col-reverse  px-6 py-10 md:px-0 md:flex-row min-h-screen items-center justify-start gap-5 w-vw bg-'
-    style={{
-        background: isLargeScreen
-          ? theme === 'light'
-            ? lightThemeGradient
-            : darkThemeGradient
-          : theme === 'light'
-          ? lightBg
-          : darkBg,
-      }}
+    <div className={`flex flex-col-reverse  px-6 py-10 md:px-0 md:flex-row min-h-screen items-center justify-start gap-5 w-vw ${theme === 'light' ? 'light-bg' : 'dark-bg'}`}
+    
     >
         
         <div className='w-[80%]  h-[60%] md:w-[50%] flex flex-col md:mt-0 items-center justify-center'>

@@ -2,7 +2,7 @@ import React, { useContext ,useState} from 'react';
 import { GlobalContext } from '../context/GlobalContext';
 import ProjectContainer from './ProjectContainer';
 import { CiCircleChevDown } from "react-icons/ci";
-
+import '../App.css'
 import portfoliolightPic from '../assets/portfolioLightPic.png'
 import portfoliodarkPic from '../assets/portfolioDarkPic.png'
 import penPalacePic from '../assets/penPalacePic.png'
@@ -134,12 +134,13 @@ live: 'https://mybookshelf-enwb.onrender.com/',
 const Skills = () => {
   const { theme } = useContext(GlobalContext);
   const [visibleProjects, setVisibleProjects] = useState(4); // Display 2 rows initially, 2 projects per row
+  
 
   const loadMoreProjects = () => {
     setVisibleProjects(prevVisible => prevVisible + 4); // Load 4 more projects (2 more rows)
   };
   return (
-    <div className={`flex flex-col  px-4   items-center justify-center gap-6`}>
+    <div className={`flex flex-col  px-4   items-center justify-center gap-6 ${theme === 'light' ? 'light-bg1' : 'dark-bg1'}`}>
       
       <h1 className={`flex flex-row  mt-[50px]  items-center justify-center text-[40px] gap-2  lg:mt-10 font-black my-5`}> My 
        <span className={`${theme==='light'? 'text-lightTheme' : 'text-darkTheme' }`}> Projects</span>

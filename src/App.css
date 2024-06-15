@@ -6,6 +6,48 @@ body{
     z-index: -100;
 }
 
+:root {
+  --light-bg: rgba(221, 225, 231, 1);
+  --dark-bg: rgba(15, 23, 42, 1);
+  --light-theme-gradient: linear-gradient(102deg, rgba(245, 102, 146, 1) 24%, rgba(221, 225, 231, 1) 24%);
+  --dark-theme-gradient: linear-gradient(102deg, rgba(56, 189, 249, 1) 24%, rgba(15, 23, 42, 1) 24%);
+ 
+  --light-theme-gradient1: linear-gradient(90deg, rgba(245, 102, 146, 1) 15.55%, rgba(221, 225, 231, 1) 15.55%);
+  --dark-theme-gradient1: linear-gradient(90deg, rgba(56, 189, 249, 1) 15.55%, rgba(15, 23, 42, 1) 15.55%);
+}
+
+
+.light-bg {
+  background: var(--light-bg);
+}
+
+.dark-bg {
+  background: var(--dark-bg);
+}
+.light-bg1 {
+  background: var(--light-bg);
+}
+
+.dark-bg1 {
+  background: var(--dark-bg);
+}
+
+
+@media (min-width: 1024px) {
+  .light-bg {
+    background: var(--light-theme-gradient);
+  }
+  .dark-bg {
+    background: var(--dark-theme-gradient);
+  }
+  .light-bg1 {
+    background: var(--light-theme-gradient1);
+  }
+  .dark-bg1 {
+    background: var(--dark-theme-gradient1);
+  }
+}
+
 html{
   scroll-behavior: smooth;
 }

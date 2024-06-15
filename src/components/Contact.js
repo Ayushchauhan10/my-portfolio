@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { GlobalContext } from '../context/GlobalContext';
 import emailjs from 'emailjs-com';
 import ButtonContainer1 from './ButtonConatiner1';
-
+import '../App.css'
 const Contact = () => {
   const { theme } = useContext(GlobalContext);
   const [formData, setFormData] = useState({
@@ -92,7 +92,7 @@ const Contact = () => {
   };
 
   return (
-    <div className={`flex flex-col px-4 items-center justify-center gap-6`}>
+    <div className={`flex flex-col px-4 items-center justify-center gap-6 ${theme === 'light' ? 'light-bg1' : 'dark-bg1'}`}>
       <h1 className={`flex flex-row items-center mt-[50px] justify-center text-[40px] gap-2  lg:mt-10 font-black my-5`}>
         Let's <span className={`${theme === 'light' ? 'text-lightTheme' : 'text-darkTheme'}`}>Talk</span>
       </h1>
