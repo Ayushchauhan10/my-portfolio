@@ -59,6 +59,7 @@ const Navabar = () => {
     setShowNav(!showNav);
   };
 
+
   const getLinkStyle = (isActive,path) => {
     const baseStyles =`p-4 absolute top-2 lg:relative group text-lightBg flex flex-row rounded-full items-center justify-center ${
         theme === 'light' ? (isActive ? 'bg-lightTheme' : 'bg-greyText') : (isActive ? 'bg-darkTheme' : 'bg-greyText')
@@ -102,9 +103,9 @@ const Navabar = () => {
                 spy={true}
                 onSetActive={() => setActive(item.path)}
               >
-                <div className={`${getLinkStyle(active === item.path,item.path)} cursor-pointer`} onClick={() => setActive(item.path)}>
+                <div className={`${getLinkStyle(active === item.path,item.path)} cursor-pointer`} onClick={()=>{ if(window.innerWidth<500){handleShowNav();} setActive(item.path)} }>
                   <span className='font-black text-2xl z-100'>{item.icon}</span>
-                  <span className='hidden hover-visible absolute top-14 -right-8 lg:right-16 lg:top-0 px-2 py-1 rounded-br-3xl lg:rounded-br-none rounded-bl-3xl lg:rounded-tl-3xl rounded-tr-3xl text-lightBg bg-greyText group-hover:block'>
+                  <span className={`hidden hover-visible absolute top-14 -right-8 lg:right-16 lg:top-0 px-2 py-1 rounded-br-3xl lg:rounded-br-none rounded-bl-3xl lg:rounded-tl-3xl rounded-tr-3xl group-hover:block ${theme==='light'?'text-lightBg bg-lightTheme':'text-white bg-darkTheme'}`}>
                     {item.label}
                   </span>
                 </div>

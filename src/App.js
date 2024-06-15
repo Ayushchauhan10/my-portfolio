@@ -12,7 +12,7 @@ const App = () => {
 
 
   return (
-    <div>
+    <div className='overflow-hidden'>
       <Navabar />
       <div className={`min-h-screen ${theme === 'light' ? 'text-greyText bg-lightBg' : 'text-lightBg bg-darkBg'}`}>
         <Element name="home"><Home /></Element>

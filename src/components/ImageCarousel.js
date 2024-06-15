@@ -152,14 +152,14 @@ const ImageCarousel = () => {
     
     
       return (
-        <div className=' w-full mx-auto mt-4 px-4 lg:px-2 mb-10'>
+        <div className=' w-full mx-auto mt-4 lg:px-4  mb-10'>
           <div className='mx-auto lg:w-[900px]  md:w-[800px] w-[400px] lg:px-3 py-3 '>
     
                   {
               images ? (
-                <Slider {...settings} className='mx-3'>
+                <Slider {...settings} className='lg:mx-3'>
                  {images.map((image, index) => (
-                    <div className='p-3'>
+                    <div className=' py-3 lg:p-3'>
 
                     
                         <div className="lg:w-[340px] lg:mx-2 flex items-center justify-center  p-3 lg:h-[400px] w-[250px] h-[300px] box2 lg:p-4   rounded-3xl overflow-hidden shadow-lg">

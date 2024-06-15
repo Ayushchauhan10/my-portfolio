@@ -25,12 +25,13 @@ const Education = () => {
                        <div className={`box2 w-full px-6 py-4 rounded-3xl flex flex-col items-start justify-start gap-3 hover:-translate-y-2 transition-transform duration-300 ease-in-out`}>
 
 
-                       <div className={` text-xs rounded-2xl px-2 py-0.5 ${theme==='light'?'bg-gray-400 text-white':'bg-gray-600 text-white'} `}>(2021-25)</div>
+                       <div className={` text-xs rounded-2xl px-2 py-0.5 ${theme==='light'?'bg-gray-400 text-white':'bg-gray-600 text-white'} `}>(2021-pursuing)</div>
 
                             <div className='w-[100%] flex flex-row items-center justify-between'>
 
                                 <div className={`w-auto text-left  lg:text-xl font-black ${theme==='light'?'text-lightTheme':'text-darkTheme'}`}>
-                                    B.Tech | CSE
+                                    B.Tech | CSE 
+                                    
                                     <div className={`hidden lg:block w-full text-xs lg:text-sm italic text-left font-normal ${theme==='light'?'text-greyText':'text-lightBg'} `}> Netaji Subhas University of Technology, Delhi</div>
                                     <div className={` block lg:hidden w-full text-xs lg:text-sm italic text-left font-normal ${theme==='light'?'text-greyText':'text-lightBg'} `}> NSUT, Delhi</div>
                                 </div>
@@ -105,7 +106,7 @@ const Education = () => {
 
                        <div className={`box2 w-full px-6 py-4 rounded-3xl flex flex-col items-start justify-start gap-3 hover:-translate-y-2 transition-transform duration-300 ease-in-out`}>
 
-                       <div className={` text-xs rounded-2xl px-2 py-0.5 ${theme==='light'?'bg-gray-400 text-white':'bg-gray-600 text-white'} `}>(2019-20)</div>
+                       <div className={` text-xs rounded-2xl px-2 py-0.5 ${theme==='light'?'bg-gray-400 text-white':'bg-gray-600 text-white'} `}>(2017-18)</div>
 
                             <div className='w-[100%] flex flex-row items-center justify-between'>
 

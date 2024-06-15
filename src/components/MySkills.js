@@ -1,4 +1,4 @@
-import React, { useContext ,useState} from 'react';
+import React, { useContext } from 'react';
 import { GlobalContext } from '../context/GlobalContext';
 import SkillIconContainer from './SkillIconContainer';
 import gitLogo from '../assets/githubLogo.png'
@@ -42,7 +42,7 @@ const MySkills = () => {
                 <div className='w-full h-[80px] flex flex-col items-center justify-start px-3 py-6 mx-auto my-auto  bg-lightBg text-greyText font-extrabold text-xl text-center'>
                     OOPS
                 </div>
-                <div className={`flex px-3 py-4 flex-col text-xs items-center font-semibold justify-center h-[80px] w-auto transition-transform ${theme==='light'?'text-lightTheme bg-lightBg ':'text-darkTheme bg-darkBg'} translate-y-10  group-hover:-translate-y-20 `}>
+                <div className={`flex px-3 py-4 rounded-3xl flex-col text-xs items-center font-semibold justify-center h-[80px] w-auto transition-transform ${theme==='light'?'text-lightTheme bg-lightBg ':'text-darkTheme bg-darkBg'} translate-y-10  group-hover:-translate-y-20 `}>
                 
                     Object Oriented Programming
                 </div>
@@ -57,7 +57,7 @@ const MySkills = () => {
                 <div className='w-full h-[80px] flex flex-col items-center justify-start px-3 py-6 mx-auto my-auto  bg-lightBg text-greyText font-extrabold text-xl text-center'>
                     DSA
                 </div>
-                <div className={`flex px-1 py-3 flex-col text-xs items-center font-medium justify-center h-[80px] w-auto transition-transform ${theme==='light'?'text-lightTheme bg-lightBg ':'text-darkTheme bg-darkBg'} translate-y-10  group-hover:-translate-y-20 `}>
+                <div className={`flex px-1 py-3 rounded-3xl flex-col text-xs items-center font-medium justify-center h-[80px] w-auto transition-transform ${theme==='light'?'text-lightTheme bg-lightBg ':'text-darkTheme bg-darkBg'} translate-y-10  group-hover:-translate-y-20 `}>
                     Data Structure & Algorithms
                 </div>
                 </div>
@@ -68,7 +68,7 @@ const MySkills = () => {
                 <div className='w-full h-[80px] flex flex-col items-center justify-start px-3 py-6 mx-auto my-auto  bg-lightBg text-greyText font-extrabold text-xl text-center'>
                     DBMS
                 </div>
-                <div className={`flex px-3 py-4 flex-col text-xs items-center font-semibold justify-center h-[80px] w-auto transition-transform ${theme==='light'?'text-lightTheme bg-lightBg ':'text-darkTheme bg-darkBg'} translate-y-10  group-hover:-translate-y-20 `}>
+                <div className={`flex px-3 py-4 flex-col rounded-3xl text-xs items-center font-semibold justify-center h-[80px] w-auto transition-transform ${theme==='light'?'text-lightTheme bg-lightBg ':'text-darkTheme bg-darkBg'} translate-y-10  group-hover:-translate-y-20 `}>
                     Data Base Management System
                 </div>
                 </div>
