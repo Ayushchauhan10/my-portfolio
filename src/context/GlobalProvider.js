@@ -1,11 +1,13 @@
-// src/context/GlobalProvider.js
+// context/GlobalContext.js
 import React, { useState } from 'react';
-import { GlobalContext } from './GlobalContext';
+import {GlobalContext} from './GlobalContext.js'
+
 
 export const GlobalProvider = ({ children }) => {
-  const [theme, setTheme] = useState('light'); 
+  const [theme, setTheme] = useState('light');
+
   const toggleTheme = () => {
-    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
 
   return (

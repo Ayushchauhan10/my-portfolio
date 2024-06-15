@@ -6,6 +6,10 @@ body{
     z-index: -100;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .icons{
     transition: transform 0.2s ease-in-out;
 }
@@ -65,12 +69,12 @@ body{
 
 @keyframes navBarItems0 {
     from {
-      left: -100px;
+      left: -110px;
       top: -50px;
       opacity: 0;
     }
     to {
-      left:0px;
+      left:10px;
       top:10px;
       opacity: 1;
     }
@@ -83,7 +87,7 @@ body{
       opacity: 0;
     }
     to {
-      left:70px;
+      left:80px;
       top:10px;
       opacity: 1;
     }
@@ -96,7 +100,7 @@ body{
       opacity: 0;
     }
     to {
-      left:140px;
+      left:150px;
       top:10px;
       opacity: 1;
     }
@@ -109,7 +113,7 @@ body{
       opacity: 0;
     }
     to {
-      left:210px;
+      left:220px;
       top:10px;
       opacity: 1;
     }
@@ -139,8 +143,8 @@ body{
       opacity: 0;
     }
     to {
-      left:300px;
-      top:20px;
+      left:290px;
+      top:9px;
       opacity: 1;
     }
   }

@@ -13,7 +13,7 @@ import '../App.css';
 import { GlobalContext } from '../context/GlobalContext';
 
 import {useTypewriter,Cursor} from 'react-simple-typewriter';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const Home = () => {
     const { theme } = useContext(GlobalContext);
@@ -33,7 +33,7 @@ const Home = () => {
     }, []);
   
     const [text] = useTypewriter({
-        words: ["Specialize in MERN Stack . . .", "Ranked among Top 75 coders in Amazon HackOnS4. . .", " Proficient in C/C++","Knight,1950+(top 3%) @leetcode. . .","have strong foundation in DSA and CS fundamentals"],
+        words: ["Specialize in MERN Stack . . .", "Ranked among Top 75 coders in Amazon HackOnS4. . .", " Proficient in C/C++","Knight,1950+(top 3%) @leetcode. . .","have strong foundation in DSA and CS fundamentals","Rnaked 5 in CodeRush'24 by AlgoUniversity"],
         loop: true,
         typeSpeed: 20,
         deleteSpeed: 10,
@@ -96,7 +96,7 @@ const Home = () => {
             </div>
 
             <div className={`${theme==='light'?'box2 p-2 rounded-full ':''}`}>
-                <Link to='/contact'>
+                <a href='#contact'>
                 <div  className={`font-bold group w-[150px] rounded-full border-2 z-0  flex flex-row justify-between ${theme==='light'?'border-lightTheme hover:bg-lightTheme  text-greyText':'border-darkTheme hover:bg-darkTheme text-darkBg'} `}>
                     
                     <div className={`  group-hover:text-white   rounded-full p-3 flex flex-row items-center justify-between ${theme==='light'?'bg-lightTheme text-lightBg':'bg-darkTheme text-darkBg'}`}>
@@ -109,7 +109,7 @@ const Home = () => {
                     </div>
 
                 </div>
-                </Link>
+                </a>
             </div>
             </div>
             
@@ -123,6 +123,7 @@ const Home = () => {
             </div>
             
         </div>
+        
     </div>
   )
 }

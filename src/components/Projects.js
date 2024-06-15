@@ -176,7 +176,7 @@ const Skills = () => {
       <div className='text-lg text-center font-medium w-[100%] my-2'>
       Here are some of the artworks I have passionately created as a hobby.
       </div> 
-     <div>
+     <div className='w-[100%]'>
 
         <ImageCarousel />
      </div>

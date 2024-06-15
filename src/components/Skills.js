@@ -18,6 +18,8 @@ import reactLogo from '../assets/icons8-react-js-96.png'
 import sqlLogo from '../assets/icons8-sql-64.png'
 import pythonLogo from '../assets/icons8-python-96.png'
 import osLogo from '../assets/icons8-operating-system-50.png'
+import Education from './Education';
+// import Education from './Education';
 
 
 const Skills = () => {
@@ -55,14 +57,14 @@ const Skills = () => {
         </a>
       </div>
 
-      <div className={`flex w-[400px] flex-col lg:flex-row gap-6 items-center my-4 justify-center text-[40px] p-6 lg:px-12 rounded-2xl`}>
+      <div className={`flex w-[400px] lg:w-auto flex-col lg:flex-row gap-6 items-center my-4 justify-center text-[40px] p-6 lg:px-12 rounded-2xl`}>
 
-        <div className={`box2 w-[300px] lg:w-auto box2 aboutBox px-6 py-2 border-2 ${theme === 'light' ? 'border-lightBg' : 'border-darkBg'} ${theme === 'light' ? 'hover:border-lightTheme' : 'hover:border-darkTheme'}`}>
+        <div className={`box2 w-[300px]  box2 aboutBox px-6 py-2 border-2 ${theme === 'light' ? 'border-lightBg' : 'border-darkBg'} ${theme === 'light' ? 'hover:border-lightTheme' : 'hover:border-darkTheme'}`}>
           <div className={`font-black ${theme === 'light' ? 'text-lightTheme' : 'text-darkTheme'}`}>10+</div>
           <div>Projects</div>
         </div>
 
-        <div className={`box2 w-[300px] lg:w-auto box2 aboutBox px-6 py-2 border-2 ${theme === 'light' ? 'border-lightBg' : 'border-darkBg'} ${theme === 'light' ? 'hover:border-lightTheme' : 'hover:border-darkTheme'}`}>
+        <div className={`box2 w-[300px]  box2 aboutBox px-6 py-2 border-2 ${theme === 'light' ? 'border-lightBg' : 'border-darkBg'} ${theme === 'light' ? 'hover:border-lightTheme' : 'hover:border-darkTheme'}`}>
           <div className={`font-black ${theme === 'light' ? 'text-lightTheme' : 'text-darkTheme'}`}>0-1 yrs</div>
           <div className=''>Experience</div>
         </div>
@@ -129,11 +131,13 @@ const Skills = () => {
 
       </div>
 
-      <div className='flex flex-col gap-2'>
+      <div className='flex w-full flex-col gap-2 items-center justify-center'>
         <h1 className={`flex flex-row items-center justify-center text-[40px] gap-2 mt-10 font-black my-5`}> Education
           <span className={`${theme === 'light' ? 'text-lightTheme' : 'text-darkTheme'}`}> TimeLine</span>
         </h1>
 
+
+      <Education/>
         
       </div>
 

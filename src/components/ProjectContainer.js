@@ -10,7 +10,7 @@ const ProjectContainer = ({ project }) => {
 
     const { theme } = useContext(GlobalContext);
   return (
-    <div className={` box2 p-4 rounded-3xl `}>
+    <div className={` box2 p-4 rounded-3xl z-0  `}>
         
         <div className={` max-w-[400px] rounded-2xl overflow-hidden transform transition-transform`} 
         >
