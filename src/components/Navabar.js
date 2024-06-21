@@ -105,7 +105,7 @@ const Navabar = () => {
               >
                 <div className={`${getLinkStyle(active === item.path,item.path)} cursor-pointer`} onClick={()=>{ if(window.innerWidth<500){handleShowNav();} setActive(item.path)} }>
                   <span className='font-black text-2xl z-100'>{item.icon}</span>
-                  <span className={`hidden hover-visible absolute top-14 -right-8 lg:right-16 lg:top-0 px-2 py-1 rounded-br-3xl lg:rounded-br-none rounded-bl-3xl lg:rounded-tl-3xl rounded-tr-3xl group-hover:block ${theme==='light'?'text-lightBg bg-lightTheme':'text-white bg-darkTheme'}`}>
+                  <span className={`hidden hover-visible absolute top-14 -right-8 lg:right-16 lg:top-0 px-2 py-1 rounded-br-3xl lg:rounded-br-none rounded-bl-3xl lg:rounded-tl-3xl rounded-tr-3xl group-hover:block ${theme==='light'?'text-lightBg bg-lightTheme':'text-white'}`}>
                     {item.label}
                   </span>
                 </div>

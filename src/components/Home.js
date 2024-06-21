@@ -16,7 +16,7 @@ const Home = () => {
     
   
     const [text] = useTypewriter({
-        words: ["Specialize in MERN Stack . . .", "Ranked among Top 75 coders in Amazon HackOnS4. . .", " Proficient in C/C++","Knight,1950+(top 3%) @leetcode. . .","have strong foundation in DSA and CS fundamentals","Rnaked 5 in CodeRush'24 by AlgoUniversity"],
+        words: ["Specialize in MERN Stack . . .", "Ranked among Top 75 coders in Amazon HackOnS4. . .", " Proficient in C/C++","Knight,1950+(top 3%) @leetcode. . .","have strong foundation in DSA and CS fundamentals","Ranked 5 in CodeRush'24 by AlgoUniversity"],
         loop: true,
         typeSpeed: 20,
         deleteSpeed: 10,
