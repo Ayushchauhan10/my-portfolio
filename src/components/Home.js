@@ -41,6 +41,11 @@ const Home = () => {
                 Ayush Chauhan</h2>
             </h1>
 
+            <div className={`flex flex-row items-center justify-center gap-2 font-semibold text-${theme==='light'?'lightTheme':'darkTheme'}`}>
+               <li> SDE Intern </li>
+               <span className={`${theme==='light'?'text-yellow-600':'text-yellow-500'} font-medium`}>[Amazon, Hyd, India]</span>
+            </div>
+
             <div className='text-lg w-[350px] h-[50px]  font-semibold'>
                 {text}
                 <span className='font-black text-3xl'>
