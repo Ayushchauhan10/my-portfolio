@@ -24,7 +24,7 @@ const Skills = () => {
             <p className='p-4 text-lg font-medium'>I'm a 4th year Computer Science Engineering student at NSUT, Delhi, with a passion for coding and web development. <br />Proficient in C/C++ and familiar with Python, I have a solid foundation in Data Structures and Algorithms, Operating Systems, OOP, and DBMS (SQL).<br /> I specialize in full-stack development using ReactJS, HTML5, CSS, JavaScript, Tailwind CSS, ExpressJS, NodeJS, and MongoDB. Explore my projects to see my work in action!</p>
         </div>
 
-        <div className={`${theme === 'light' ? 'box2 p-2 rounded-full ' : ''}`}>
+        {/* <div className={`${theme === 'light' ? 'box2 p-2 rounded-full ' : ''}`}>
             <a href={pdfFile} target="_blank" rel="noopener noreferrer" >
 
             <div className={`font-bold group  w-[150px] rounded-full border-2   flex flex-row justify-end ${theme === 'light' ? 'border-lightTheme hover:bg-lightTheme  text-greyText' : 'border-darkTheme hover:bg-darkTheme text-darkBg'} `}>
@@ -42,7 +42,7 @@ const Skills = () => {
             </div>
 
             </a>
-        </div>
+        </div> */}
 
         <div className={`flex w-[400px] lg:w-auto flex-col lg:flex-row gap-6 items-center my-4 justify-center text-[40px] p-6 lg:px-12 rounded-2xl`}>
 

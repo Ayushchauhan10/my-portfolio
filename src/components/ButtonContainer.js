@@ -7,6 +7,7 @@ import whatsAppIcon from '../assets/whatsapp.png';
 import linkedIcon from '../assets/linkedin.png';
 import twitterIcon from '../assets/twitter.png';
 import gitIcon from '../assets/github.png';
+import leetCodeIcon from '../assets/leetCodeIcon.png';
 
 
 const ButtonContainer = () => {
@@ -18,6 +19,12 @@ const ButtonContainer = () => {
         <div className={`w-[55px] h-[55px] icons rounded-2xl ${theme==='light'?'shadow1 p-2':'shadow2'} `}>
             <a href="https://github.com/Ayushchauhan10" target="_blank" rel="noreferrer"> 
             <img src={gitIcon} alt="" /> 
+            </a>
+        </div>
+
+        <div className={`w-[55px] h-[55px] icons rounded-2xl ${theme==='light'?'shadow1 p-2':'shadow2'} `}>
+            <a href="https://leetcode.com/u/chauhan_ayush/" target="_blank" rel="noreferrer"> 
+            <img src={leetCodeIcon} alt="" className='rounded-lg ' /> 
             </a>
         </div>
 
@@ -38,6 +45,7 @@ const ButtonContainer = () => {
 
         </a>
         </div>
+        <br/>
 
         <div className={`w-[55px] h-[55px] icons rounded-2xl ${theme==='light'?'shadow1 p-2':'shadow2'} `}>
 

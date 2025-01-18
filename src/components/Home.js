@@ -54,51 +54,51 @@ const Home = () => {
             </div>
 
             <div className='w-full flex  my-4  flex-row items-center justify-start gap-4'>
-            <div className={`${theme==='light'?'box2 p-2 rounded-full ':''}`}>
+                    {/* <div className={`${theme==='light'?'box2 p-2 rounded-full ':''}`}>
 
-                <a href={pdfFile} target="_blank" rel="noopener noreferrer" >
+                        <a href={pdfFile} target="_blank" rel="noopener noreferrer" >
 
-                    <div  className={`font-bold group  w-[150px] rounded-full border-2   flex flex-row justify-end ${theme==='light'?'border-lightTheme hover:bg-lightTheme  text-greyText':'border-darkTheme hover:bg-darkTheme text-darkBg'} `}>
-                    
-                        <button className='flex  flex-row items-center justify-between w-full group-hover:text-white '>
-                            <div className={`  group-hover:text-white  rounded-full p-3 flex flex-row items-center justify-between ${theme==='light'?'bg-lightTheme text-lightBg':'bg-darkTheme text-darkBg'}`}>
+                            <div  className={`font-bold group  w-[150px] rounded-full border-2   flex flex-row justify-end ${theme==='light'?'border-lightTheme hover:bg-lightTheme  text-greyText':'border-darkTheme hover:bg-darkTheme text-darkBg'} `}>
+                            
+                                <button className='flex  flex-row items-center justify-between w-full group-hover:text-white '>
+                                    <div className={`  group-hover:text-white  rounded-full p-3 flex flex-row items-center justify-between ${theme==='light'?'bg-lightTheme text-lightBg':'bg-darkTheme text-darkBg'}`}>
 
-                                <RiDownloadLine className={`text-[20px]  group-hover:text-white  ` }/>
+                                        <RiDownloadLine className={`text-[20px]  group-hover:text-white  ` }/>
+                                    </div>
+                                <div className={`py-2  pr-6 text-lg  group-hover:text-white  ${theme==='light'?'text-lightTheme ':'text-darkTheme'}`}>
+                                        Resume
+                                    </div> 
+                                </button>
+                                
                             </div>
-                        <div className={`py-2  pr-6 text-lg  group-hover:text-white  ${theme==='light'?'text-lightTheme ':'text-darkTheme'}`}>
-                                Resume
-                            </div> 
-                        </button>
-                        
+
+                        </a>
+                    </div> */}
+
+                    <div className={`${theme==='light'?'box2 p-2 rounded-full ':''}`}>
+                        <a href='#contact'>
+                        <div  className={`font-bold group w-[150px] rounded-full border-2 z-0  flex flex-row justify-between ${theme==='light'?'border-lightTheme hover:bg-lightTheme  text-greyText':'border-darkTheme hover:bg-darkTheme text-darkBg'} `}>
+                            
+                            <div className={`  group-hover:text-white   rounded-full p-3 flex flex-row items-center justify-between ${theme==='light'?'bg-lightTheme text-lightBg':'bg-darkTheme text-darkBg'}`}>
+                            <BsChatTextFill  className={`text-[20px]  group-hover:text-white  ` }/>
+
+                            </div>
+                            <ScrollLink
+                        key={'contact'}
+                        to={'contact'}
+                        smooth={true}
+                        duration={100}
+                        spy={true}
+                    >
+                            <div className={`py-2  pr-6 text-lg  group-hover:text-white  ${theme==='light'?'text-lightTheme ':'text-darkTheme'}`}>
+                                Text Me
+                            </div>
+
+                    </ScrollLink>
+
+                        </div>
+                        </a>
                     </div>
-
-                </a>
-            </div>
-
-            <div className={`${theme==='light'?'box2 p-2 rounded-full ':''}`}>
-                <a href='#contact'>
-                <div  className={`font-bold group w-[150px] rounded-full border-2 z-0  flex flex-row justify-between ${theme==='light'?'border-lightTheme hover:bg-lightTheme  text-greyText':'border-darkTheme hover:bg-darkTheme text-darkBg'} `}>
-                    
-                    <div className={`  group-hover:text-white   rounded-full p-3 flex flex-row items-center justify-between ${theme==='light'?'bg-lightTheme text-lightBg':'bg-darkTheme text-darkBg'}`}>
-                       <BsChatTextFill  className={`text-[20px]  group-hover:text-white  ` }/>
-
-                    </div>
-                    <ScrollLink
-                key={'contact'}
-                to={'contact'}
-                smooth={true}
-                duration={100}
-                spy={true}
-              >
-                     <div className={`py-2  pr-6 text-lg  group-hover:text-white  ${theme==='light'?'text-lightTheme ':'text-darkTheme'}`}>
-                        Text Me
-                    </div>
-
-              </ScrollLink>
-
-                </div>
-                </a>
-            </div>
             </div>
             
             <div className={`flex flex-col gap-2`}>
