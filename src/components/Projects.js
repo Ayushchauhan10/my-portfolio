@@ -15,11 +15,23 @@ import urlPic from '../assets/urlPic.png'
 import budegtPlannerPic from '../assets/budegtPlannerPic.png'
 import appleLandingPic from '../assets/appleLandingPic.png'
 import bookShelfPic from '../assets/bookShelfPic.png'
+import MultiThreadedWebServer from '../assets/MultiThreadedWebServer.png'
 import ImageCarousel from './ImageCarousel';
 
 
 
 const projects = [
+  {
+    title: 'Multi-Threaded WebServer',
+    tech: 'Java',
+    description: ['Designed and implemented a multithreaded Java web server supporting concurrent requests, static file serving, and RESTful APIs',
+                   'Optimized request handling with context switching, enabling efficient processing of multiple client requests per thread',
+                   'Achieved 500 req/sec with greater than 90% success in Apache JMeter tests under a 50,000 user load with an average response time of 400 ms'
+    ],
+    image: [MultiThreadedWebServer],
+    github: 'https://github.com/Ayushchauhan10/WebServer',
+    live: 'https://github.com/Ayushchauhan10/WebServer',
+  },
   {
     title: 'Pen Palace: Blogging MERN App',
     tech: 'React.js Node.js, Express.js, MongoDB with Mongoose, Tailwind CSS and Cloudinary',
