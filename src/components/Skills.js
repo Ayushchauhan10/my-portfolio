@@ -1,10 +1,6 @@
 import React, { useContext } from 'react';
 import { GlobalContext } from '../context/GlobalContext';
 import '../App.css'
-import pdfFile from '../assets/AyushResume.pdf';
-
-import { RiDownloadLine } from "react-icons/ri";
-
 import Education from './Education';
 import MySkills from './MySkills';
 
@@ -21,7 +17,12 @@ const Skills = () => {
 
         <div className={` w-[80%] lg:w-[60%] my-4 rounded-2xl box ${theme === 'light' ? 'box' : 'bg-gray-700'}`}>
 
-            <p className='p-4 text-lg font-medium'>I'm a 4th year Computer Science Engineering student at NSUT, Delhi, with a passion for coding and web development. <br />Proficient in C/C++ and familiar with Python, I have a solid foundation in Data Structures and Algorithms, Operating Systems, OOP, and DBMS (SQL).<br /> I specialize in full-stack development using ReactJS, HTML5, CSS, JavaScript, Tailwind CSS, ExpressJS, NodeJS, and MongoDB. Explore my projects to see my work in action!</p>
+            <p className='p-4 text-lg font-medium'>
+I'm a final-year B.Tech student at Netaji Subhas University of Technology with hands-on experience as an SDE Intern at Amazon. At Amazon, I built scalable, event-driven systems using Java, Spring Boot, and AWS services like Lambda, SQS, Firehose, and DynamoDB, handling over 4 million transactions/month. I’ve delivered critical features, contributed to CI/CD pipelines, and developed load tests that validated 150K+ transactions in minutes.
+I'm ranked in the top 4% on LeetCode (1988 rating), a 3-star coder on CodeChef, and placed in the Top 75 globally in HackOn with Amazon S4. My skill set spans Java, C++, Spring Boot, AWS CDK, React.js, MongoDB, and more. I love building performance-oriented backend systems and have also created full-stack and multithreaded server projects with high concurrency support.
+
+
+            </p>
         </div>
 
         {/* <div className={`${theme === 'light' ? 'box2 p-2 rounded-full ' : ''}`}>

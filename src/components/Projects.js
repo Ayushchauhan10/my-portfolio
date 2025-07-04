@@ -17,6 +17,7 @@ import appleLandingPic from '../assets/appleLandingPic.png'
 import bookShelfPic from '../assets/bookShelfPic.png'
 import MultiThreadedWebServer from '../assets/MultiThreadedWebServer.png'
 import ImageCarousel from './ImageCarousel';
+import Experience from './Experience';
 
 
 
@@ -153,7 +154,7 @@ const Skills = () => {
   };
   return (
     <div className={`flex flex-col  px-4   items-center justify-center gap-6 ${theme === 'light' ? 'light-bg1' : 'dark-bg1'}`}>
-      
+      <Experience/>
       <h1 className={`flex flex-row  mt-[50px]  items-center justify-center text-[40px] gap-2  lg:mt-10 font-black my-5`}> My 
        <span className={`${theme==='light'? 'text-lightTheme' : 'text-darkTheme' }`}> Projects</span>
       </h1>

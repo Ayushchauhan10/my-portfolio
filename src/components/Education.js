@@ -78,7 +78,7 @@ const Education = () => {
                                 
                                 </div>
                                 <div>
-                                Cleared NDA , (Screened out in SSB)
+                                Cleared NDA , (Conference out in SSB)
                                 </div>
                                 
                             </div>
